@@ -6,14 +6,15 @@ Maggie APP has a built-in encrypted IM module, which is based on PKI encryption 
 
 ## Architecture
 As a social platform with attributes of strong authentication and high privacy, Maggie has designed an **encrypted IM mechanism** to fully protect user’s privacy. 
-<br/><br/>
-User’s private key, which is the most important for privacy, will be generated and stored only at user’s cellphone. Private key will never be sent to server and has to be kept by user himself just like in a **block chain system**. For example, in iOS, user’s private key and certificate will kept in the Keychain, which has a higher secure level than other application storages.
-<br/><br/>
-Maggie will generate a symmetric key and transfer it between two users for their encrypted P2P session, using **PKI** encryption mechanism.
 <br/>
 <div align="center">
   <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/archi_IM.png" width = "655" height = "439" alt="EncryptedIM_Arch" />
 </div>
+<br/>
+User’s private key, which is the most important for privacy, will be generated and stored only at user’s cellphone. Private key will never be sent to server and has to be kept by user himself just like in a **block chain system**. For example, in iOS, user’s private key and certificate will kept in the Keychain, which has a higher secure level than other application storages.
+<br/><br/>
+Maggie will generate a symmetric key and transfer it between two users for their encrypted P2P session, using **PKI** encryption mechanism.
+<br/>
 
 ## Encrypted IM Process
 An encrypted P2P IM process is accomplished in Maggie APP as below:
@@ -22,10 +23,12 @@ An encrypted P2P IM process is accomplished in Maggie APP as below:
   <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/proc_IM.png" width = "650" height = "532" alt="EncryptedIM_Arch" />
 </div>
 <br/>
-1. User *A* sends a request for encrypted IM with *B*
-2. User *B* accepts the request
-3. *A* sends request to server to apply for the public key of *B*
-4. *A* gets *B*’s public key, generates a symmetric session key, and encrypts it with public key of *B*
-5. *A* signs a verification information with his private key, and send it to *B*
-6. *B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key
-7. User *A* and *B* both enter encrypted IM and start a chat
+<ol>
+<li><p>User *A* sends a request for encrypted IM with *B*</p></li>
+<li><p>User *B* accepts the request</p></li>
+<li><p>*A* sends request to server to apply for the public key of *B*</p></li>
+<li><p>*A* gets *B*’s public key, generates a symmetric session key, and encrypts it with public key of *B*</p></li>
+<li><p>*A* signs a verification information with his private key, and send it to *B*</p></li>
+<li><p>*B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key</p></li>
+<li><p>User *A* and *B* both enter encrypted IM and start a chat</p></li>
+</ol>
