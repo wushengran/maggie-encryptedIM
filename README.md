@@ -21,10 +21,10 @@ An encrypted P2P IM process is accomplished in Maggie APP as below:
 <div align="center">
   <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/proc_IM.png" width = "650" height = "532" alt="EncryptedIM_Arch" />
 </div>
-1.	User *A* sends a request for encrypted IM with *B*
-2.	User *B* accepts the request
-3.	*A* sends request to server to apply for the public key of *B*
-4.	*A* gets *B*’s public key, generates a symmetric session key, and encrypts it with public key of *B*
-5.	*A* signs a verification information with his private key, and send it to *B*
-6.	*B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key
-7.	User *A* and *B* both enter encrypted IM and start a chat
+1. User *A* sends a request for encrypted IM with *B*
+2. User *B* accepts the request
+3. *A* sends request to server to apply for the public key of *B*
+4. *A* gets *B*’s public key, generates a symmetric session key, and encrypts it with public key of *B*
+5. *A* signs a verification information with his private key, and send it to *B*
+6. *B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key
+7. User *A* and *B* both enter encrypted IM and start a chat
