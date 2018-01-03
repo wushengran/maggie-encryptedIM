@@ -21,6 +21,7 @@ An encrypted P2P IM process is accomplished in Maggie APP as below:
 <div align="center">
   <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/proc_IM.png" width = "650" height = "532" alt="EncryptedIM_Arch" />
 </div>
+<br/>
 1. User *A* sends a request for encrypted IM with *B*
 2. User *B* accepts the request
 3. *A* sends request to server to apply for the public key of *B*
@@ -28,9 +29,3 @@ An encrypted P2P IM process is accomplished in Maggie APP as below:
 5. *A* signs a verification information with his private key, and send it to *B*
 6. *B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key
 7. User *A* and *B* both enter encrypted IM and start a chat
-### Register process:
-1.	Download server certification first to establish https connection
-2.	Generate private and public key locally
-3.	Set nickname and personal information
-4.	Send request with public key and personal info for cert
-5.	Login with cert
