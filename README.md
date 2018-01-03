@@ -24,11 +24,11 @@ An encrypted P2P IM process is accomplished in Maggie APP as below:
 </div>
 <br/>
 <ol>
-<li><p>User *A* sends a request for encrypted IM with *B*</p></li>
-<li><p>User *B* accepts the request</p></li>
-<li><p>*A* sends request to server to apply for the public key of *B*</p></li>
-<li><p>*A* gets *B*’s public key, generates a symmetric session key, and encrypts it with public key of *B*</p></li>
-<li><p>*A* signs a verification information with his private key, and send it to *B*</p></li>
-<li><p>*B* receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with *A*’s public key</p></li>
-<li><p>User *A* and *B* both enter encrypted IM and start a chat</p></li>
+<li><p>User <i>A</i> sends a request for encrypted IM with <i>B</i></p></li>
+<li><p>User <i>B</i> accepts the request</p></li>
+<li><p><i>A</i> sends request to server to apply for the public key of <i>B</i></p></li>
+<li><p><i>A</i> gets <i>B</i>’s public key, generates a symmetric session key, and encrypts it with public key of <i>B</i></p></li>
+<li><p><i>A</i> signs a verification information with his private key, and send it to <i>B</i></p></li>
+<li><p><i>B</i> receives the encrypted session key and verification information, decrypts the session key with his private key, and verifies the signed information with <i>A</i>’s public key</p></li>
+<li><p>User <i>A</i> and <i>B</i> both enter encrypted IM and start a chat</p></li>
 </ol>
