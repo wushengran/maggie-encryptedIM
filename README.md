@@ -12,13 +12,15 @@ User’s private key, which is the most important for privacy, will be generated
 Maggie will generate a symmetric key and transfer it between two users for their encrypted P2P session, using **PKI** encryption mechanism.
 <br/>
 <div align="center">
-  <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/archi_IM.png" width = "621" height = "595" alt="EncryptedIM_Arch" />
+  <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/archi_IM.png" width = "655" height = "439" alt="EncryptedIM_Arch" />
 </div>
 
 ## Encrypted IM Process
 An encrypted P2P IM process is accomplished in Maggie APP as below:
 <br/>
-![EncryptedIM_Proc](https://github.com/WuShengRan/maggie-login/blob/master/proc_IM.png)
+<div align="center">
+  <img src="https://github.com/WuShengRan/maggie-encryptedIM/blob/master/proc_IM.png" width = "650" height = "532" alt="EncryptedIM_Arch" />
+</div>
 1.	User *A* sends a request for encrypted IM with *B*
 2.	User *B* accepts the request
 3.	*A* sends request to server to apply for the public key of *B*
